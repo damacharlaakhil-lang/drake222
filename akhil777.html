@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Awesome Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background: #ffcc00;
+            color: black;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ffaa00;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.4);
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🔥 My Awesome Game</h1>
+</header>
+
+<section class="hero">
+    <h2>Experience the Ultimate Adventure</h2>
+    <p>
+        Jump, run, and conquer challenging levels in this exciting action-packed game.
+        Are you ready to become the champion?
+    </p>
+    <button class="btn" onclick="startGame()">Play Now</button>
+</section>
+
+<section class="features">
+    <div class="feature-card">
+        <h3>⚡ Fast Gameplay</h3>
+        <p>Smooth and responsive controls for a thrilling experience.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>🎯 Challenging Levels</h3>
+        <p>Test your skills with increasing difficulty.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>🏆 High Scores</h3>
+        <p>Compete with friends and beat the leaderboard.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 My Awesome Game | All Rights Reserved
+</footer>
+
+<script>
+function startGame() {
+    alert("Game is starting...");
+    // You can redirect to your game page like this:
+    // window.location.href = "game.html";
+}
+</script>
+
+</body>
+</html>
